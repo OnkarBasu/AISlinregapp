@@ -38,15 +38,15 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load the trained model
-with open("C:/Users/abasu/OneDrive/Desktop/AISapp/eta_prediction_model.pkl", "rb") as model_file:
+with open("eta_prediction_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
 
 # Load the scaler
-with open("C:/Users/abasu/OneDrive/Desktop/AISapp/scaler.pkl", "rb") as scaler_file:
+with open("scaler.pkl", "rb") as scaler_file:
     scaler = pickle.load(scaler_file)
 
 # Load the label encoders
-with open("C:/Users/abasu/OneDrive/Desktop/AISapp/label_encoders.pkl", "rb") as encoders_file:
+with open("label_encoders.pkl", "rb") as encoders_file:
     label_encoders = pickle.load(encoders_file)
 
 # Define the list of input features
